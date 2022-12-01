@@ -1,0 +1,94 @@
+:root{
+    --cor-da-letra: #CDE6FF;
+    --cor-principal: #4A83D5;
+    --cor-secundaria: #94C5FF;
+    --cor-alternativa: #525252;
+    --cor-subtitulo: #0367A6;
+}
+
+@font-face {
+    font-family: 'pokemon hollow';
+    src: url(/src/fonts/Pokemon\ Hollow.ttf);
+}
+
+@font-face {
+    font-family: 'pokemon solid';
+    src: url(/src/fonts/Pokemon\ Solid.ttf);
+}
+
+@font-face {
+    font-family: 'pokemon';
+    src: url(/src/fonts/Pokemon\ Classic.ttf);
+}
+
+
+
+
+header{
+    text-align: center;;
+    padding-bottom: 10px;
+    font-family: 'pokemon';
+    color: #0367A6;
+    background-image: linear-gradient(to right, var(--cor-principal), var(--cor-secundaria), var(--cor-da-letra));
+}
+
+header h2{
+    text-shadow: -2px 2px 1px #5FC2D9;
+}
+
+.logo-pokemon{
+    padding-top: 20px;
+}
+
+main{
+    height: 800px;
+    background-image: url(/src/pokemon.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.nome-pokemon{
+    color: #FFF;
+    font-size: 28px;
+    text-shadow: -2px 3px 2px var(--cor-subtitulo), 1px -1px 1px var(--cor-da-letra);
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px;
+}
+
+.descricao{
+    color: var(--cor-da-letra);
+    position: absolute;
+    top: 42%;
+    margin: 20px;
+    text-align: justify;
+}
+
+.descricao::first-line{
+    color: var(--cor-subtitulo);
+    text-decoration: underline;
+}
+
+.descricao p{
+    margin-bottom: 10px;
+}
+
+.articuno{
+    margin: 20px;
+    transform: scale(0.7, 0.7);
+}
+
+.pokemon{
+    position: absolute;
+    top: -4%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
